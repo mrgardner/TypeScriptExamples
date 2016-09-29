@@ -1,0 +1,23 @@
+{
+  "name": "type-script-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrgardner/TypeScriptExample.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrgardner/TypeScriptExample/issues"
+  },
+  "homepage": "https://github.com/mrgardner/TypeScriptExample#readme",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
