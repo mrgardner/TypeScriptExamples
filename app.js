@@ -31,3 +31,54 @@ var car = "BMW";
 console.log(car);
 car = { brand: "BMW", series: 3 };
 console.log(car);
+// functions
+function returnMYName() {
+    return myName;
+}
+console.log(returnMYName());
+// void
+function sayHello() {
+    console.log("Hello!");
+}
+// argument types
+function multiply(value1, value2) {
+    return value1 * value2;
+}
+console.log(multiply(10, 2));
+// function types
+var myMultiply;
+// myMultiply = sayHello;
+// myMultiply();
+myMultiply = multiply;
+console.log(myMultiply(5, 2));
+// objects
+var userData = {
+    name: 'Matt',
+    age: 22
+};
+// userData = {
+//     a: "Hello",
+//     b: 22
+// };
+// complex object
+var complex = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+var complex2 = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};
+// union types
+var myRealRealAge = 27;
+myRealRealAge = "27";
+// myRealRealAge = true;
+// check types
+var finalValue = 22;
+if (typeof finalValue == "number") {
+    console.log("Final value is a number");
+}
