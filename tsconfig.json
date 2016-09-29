@@ -2,8 +2,11 @@
     "compilerOptions": {
         "module": "commonjs",
         "target": "es5",
-        "noImplicitAny": false,
-        "sourceMap": false
+        "noImplicitAny": false,  // When set true prevents you from implicitly set variable to any but not giving it a value
+        "sourceMap": false, // Creates js.map so you have access to Typescript file in browser for debugging when set to True
+        "noEmitOnError": true, // Prevents files from being compiled if error
+        "strictNullChecks": true,
+        "noUnusedParameters": true
     },
     "exclude": ["node_modules"]
 }
