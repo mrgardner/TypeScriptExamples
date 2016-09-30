@@ -1,1 +1,11 @@
-console.log("It works");
+/// <reference path="CircleMath.ts" />
+/// <reference path="rectangleMath.ts" />
+
+import CircleMath = MyMath.Circle;
+const PI = 2.99;
+
+console.log(MyMath.calculateRectangle(10,20));
+console.log(CircleMath.calculateCircumference(3));
+console.log(PI);
+
+// compile with tsc app.ts --outFile app.js
