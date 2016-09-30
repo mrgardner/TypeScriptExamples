@@ -4,9 +4,20 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
     <title>TypeScript</title>
+    <script src="node_modules/systemjs/dist/system.js"></script>
 </head>
 <body>
-Hello
-<script src="./app.js"></script>
+<div id="app">Change it with jQuery</div>
+<script>
+    // set our baseURL reference path
+    SystemJS.config({
+        map: {
+            "jQuery": "node_modules/jquery/dist/jquery.min.js"
+        },
+        baseURL: '/',
+        defaultJSExtensions: true
+    });
+    SystemJS.import('app.js');
+</script>
 </body>
 </html>

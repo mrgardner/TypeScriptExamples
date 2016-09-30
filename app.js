@@ -1,1 +1,3 @@
-console.log("It works");
+"use strict";
+require("jQuery");
+$("#app").css({ "background-color": "green" });
